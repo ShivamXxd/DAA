@@ -1,9 +1,5 @@
 class Solution(object):
     def findRelativeRanks(self, score):
-        """
-        :type score: List[int]
-        :rtype: List[str]
-        """
         sorted_scores = sorted(score, reverse=True)
         rank_map = {}
         

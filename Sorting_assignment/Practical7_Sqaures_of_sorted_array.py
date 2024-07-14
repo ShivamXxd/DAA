@@ -1,9 +1,5 @@
 class Solution(object):
     def sortedSquares(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[int]
-        """
         n = len(nums)
         result = [0] * n
         left, right = 0, n - 1
@@ -19,9 +15,7 @@ class Solution(object):
             else:
                 result[position] = right_square
                 right -= 1
-            
             position -= 1
-
         return result
 
 solution = Solution()

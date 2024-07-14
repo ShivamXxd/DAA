@@ -1,9 +1,5 @@
 class Solution(object):
     def sortEvenOdd(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[int]
-        """
         odd_indices = nums[1::2]
         even_indices = nums[0::2]
         

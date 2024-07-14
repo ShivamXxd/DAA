@@ -1,10 +1,5 @@
 class Solution(object):
     def kWeakestRows(self, mat, k):
-        """
-        :type mat: List[List[int]]
-        :type k: int
-        :rtype: List[int]
-        """
         soldiers_count = [(sum(row), index) for index, row in enumerate(mat)]
         
         soldiers_count.sort(key=lambda x: (x[0], x[1]))

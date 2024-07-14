@@ -1,5 +1,5 @@
 class Solution:
-    def buyChoco(self, prices: List[int], money: int) -> int:
+    def buyChoco(self, prices: list[int], money: int) -> int:
         min_one = self.find_min(prices, -1)
         min_two = self.find_min(prices, min_one)
         
